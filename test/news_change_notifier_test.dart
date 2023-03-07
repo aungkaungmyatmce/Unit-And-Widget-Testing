@@ -27,6 +27,7 @@ void main() {
       Article(title: 'Test 2', content: 'Text 2 content'),
       Article(title: 'Test 3', content: 'Text 3 content'),
     ];
+
     void arrangeNewsServiceReturnsArticles() {
       when(() => mockNewsService.getArticles())
           .thenAnswer((_) async => articlesFromService);
