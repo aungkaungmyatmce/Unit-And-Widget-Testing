@@ -12,12 +12,12 @@ class ArticlePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mq = MediaQuery.of(context);
+    final mqo = MediaQuery.of(context);
     return Scaffold(
       body: SingleChildScrollView(
         padding: EdgeInsets.only(
-          top: mq.padding.top,
-          bottom: mq.padding.bottom,
+          top: mqo.padding.top,
+          bottom: mqo.padding.bottom,
           left: 8,
           right: 8,
         ),
